@@ -31,19 +31,20 @@ You can nest pages in a directory structure, and include index.* pages for sub d
 
 Use a yaml for page attributes and settings
 contact.html.erb
-   ---
-   title: Contact Us
-   meta_title: Contact Our Team
-   contact:
-     email: info@bitbased.net
-   ---
-   <% image_tag "map.png", :class => "map_image" %>
-   <h1><%= @page.title %></h1>
-   <p>
-     Contact us by email or phone<br>
-     Email: <%= mail_to @page.contact.email %>
-   </p>
-
+```erb
+---
+title: Contact Us
+meta_title: Contact Our Team
+contact:
+  email: info@bitbased.net
+---
+<% image_tag "map.png", :class => "map_image" %>
+<h1><%= @page.title %></h1>
+<p>
+  Contact us by email or phone<br>
+  Email: <%= mail_to @page.contact.email %>
+</p>
+```
 After setting up some pages you can create simple navigation from a layout in your app or any content page with:
 
 ```ruby

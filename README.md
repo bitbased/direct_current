@@ -92,6 +92,7 @@ numbers and dates are ignored in final urls and any listing parameters:
 /pages/03-blog/index.html
 /pages/03-blog/2013-7-19-initial-commit-post.md
 /pages/03-contact.html
+```
 
 ## Caveats and Funky Stuff
 
